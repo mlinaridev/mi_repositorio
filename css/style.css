@@ -1,0 +1,340 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+   
+}
+
+
+img {
+   
+  max-width: 100%;
+   display: block;
+   margin: auto;
+    
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #656565;;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    
+}
+
+/* header */
+a { 
+    text-decoration: none; 
+    color: rgb(70, 70, 70);
+    font-weight: 600;
+    margin: auto;
+} 
+
+header { 
+    background-color: #e8e8e8; 
+    
+    width: 100%;
+} 
+
+.row { 
+    display: flex;
+    justify-content: space-around;
+    margin: auto ;   
+}
+.wrap { 
+    display: flex;
+    flex-wrap: wrap ;   
+}
+
+.column
+{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto ;   
+    flex-wrap: wrap;
+}
+
+
+
+nav { 
+    margin: auto;
+}
+
+.nav-list { 
+    display: flex;
+    justify-content: space-around;
+    margin: auto; 
+    padding: 0rem 1rem;
+}
+
+.nav-link{
+    
+    list-style: none; 
+    text-decoration:none;
+    color: aliceblue;
+    font-weight: 300;
+    margin: 0.5rem;
+    flex-wrap: 1 0 300px;  
+}
+
+nav ul { 
+    margin: auto;
+} 
+
+
+/* fin header */
+
+
+ 
+
+
+
+
+
+.mainPagina {
+    
+    padding: 2rem ;
+    width: auto;
+    background-color: #757575;
+    background-image: linear-gradient(0deg, #757575 27%, #949494 40%, #d8d8d8 80%);
+    
+}
+
+.mainPagina_h3{ 
+    padding-bottom: 1rem;
+    margin: 0rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    
+}
+
+.main__section { 
+    text-align: center; 
+    margin: auto;
+    max-width: 100%;
+    color: aliceblue;
+    
+    padding: 0rem ; 
+ }
+ .container__estudiopl { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 2rem 0rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+.estudiopl__foto { 
+    box-shadow: 0rem 2rem 4rem 0rem rgb(46, 46, 46);
+    margin: auto;
+}
+
+ .main__section--contacto { 
+    text-align: start; 
+    margin: 0rem auto;
+    color: rgb(27, 27, 27);
+    padding: 0rem ; 
+ }
+
+.main__section p {    
+   margin: 1rem auto;
+   padding:2rem auto; 
+   text-align: justify;    
+}
+
+.section__nosotros, .section_proyectos { 
+    
+    text-align: center; 
+    margin: 0rem;
+    width: 100%;
+    color: aliceblue;
+    justify-content: center;
+    padding: 0rem 0rem; 
+     }
+
+.nosotros{
+max-width: 20rem;
+}
+
+.proyecto{
+    max-width: 15rem;
+    }
+
+
+.nosotros, .proyecto { 
+    margin: 1rem auto; 
+    padding: 1.5rem; 
+    background-color: rgba(153, 153, 153, 0.8);
+    box-shadow: 0rem 2rem 4rem 0rem black;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+
+
+/* footer */
+
+footer {
+    background: rgb(217,217,217);
+background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(101,101,101,1) 3%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+   
+}
+.footer__div h3 {
+    font-weight: 600;     
+}
+
+.footer__div p {
+    font-weight: 300;   
+}
+
+.fa-brands { 
+    color: aliceblue ;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* fin footer */
+
+/* inicio contacto */
+
+form { 
+    padding: 0rem ;
+    margin: auto;
+        
+}
+
+fieldset{ 
+    padding: 0.5rem;
+    margin: auto;  
+    
+     
+}
+
+fieldset div{ 
+    padding: 0.5rem;
+    margin: a0rem;
+    
+}
+
+
+.block {
+    margin: 0rem;
+    display: block;    
+}
+
+.inline
+{
+    margin: 0rem;
+    display:inline-block;    
+}
+
+/* fin contacto */
+
+/* inicio prensa */
+
+
+
+.main__section--flex { 
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin: 3rem auto;
+}
+
+.tablePrensa{ 
+    margin: auto  ;
+    text-align: center;
+    color: #1e1e1e; 
+    font-weight: 400; 
+    
+}
+
+td ul li { 
+    list-style: none ;
+}
+
+th, td {
+    padding: 1rem 1.5rem;
+    background-color: rgba(198, 198, 198, 0.24) ;
+}
+
+.prensaDiv{ 
+    text-align: center;
+    margin: 1rem  auto; 
+    
+}
+
+
+
+
+
+
+
+/* fin prensa */
+
+@media (min-width:768px) {
+    .main__section, .section__proyectos, .container__estudiopl { 
+        text-align: center; 
+        margin: auto 3rem;
+        max-width: 100%;
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-content: center;
+        justify-content: center;
+         
+     }
+     
+     .section__nosotros
+     { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100 vh;
+        grid-template-rows: auto;
+        gap: 2rem;
+        align-content: space-between;
+         
+     }
+     .header__container
+     { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+     .nav-link
+     { 
+        margin: 0rem 1rem;
+     }
+
+
+}
+
+@media (min-width:1200px) {
+    .section__nosotros
+     { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100 vh;
+        grid-template-rows: auto;
+        gap: 2rem;
+        align-content: space-between; 
+    }
+}
